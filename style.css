@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  margin: 10vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+h1 {
+  align-self: center;
+  color: #214775;
+  font-size: 2em;
+}
+
+.library-count {
+  border: 2px solid;
+  padding: 0 0.6em;
+  color: #214775;
+  font-size: 0.8em;
+}
+
+.order {
+  background: #4594F5;
+  padding: 1em;
+  
+}
+
+#book-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+#book-table td, #book-table th {
+  border: 1px solid #ddd;
+  padding: 0.8em;
+  color: rgb(25, 13, 97);
+}
+
+#book-table th {
+  background: #214775;
+  color: white;
+}
+
+#book-table tr:nth-child(even) {
+  background-color: #8FBEF7;
+}
+
+#book-table tr:hover {
+  background-color: #566475;
+}
+
+.form-container {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border: 3px solid black;
+  background: #566475;
+  z-index: 9;
+  padding: 2em;
+}
+
+#open-button {
+  background-color: rgb(58, 58, 170);
+  line-height: 25px;
+  font-size: 2em;
+  color: white;
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+}
+
+input {
+  height: 2em;
+  margin: 1em auto;
+  width: 100%;
+ font-size: 1em; 
+}
+
+#status {
+  height: 2em;
+  font-size: 1em; 
+}
+
+
+label {
+  font-size: 1.2em;
+  color: white;
+}
+
+
+
+#submit-btn, #cancel-btn {
+  text-align: center;
+  background: #4594F5;
+  color: white;
+  padding: 1em;
+  font-size: 1.4em;
+}
+
+.delete-btn, .crs-btn {
+    width: 10%;
+}
+
+
+.delete-btn:hover, .crs-btn:hover {
+  cursor: pointer;
+color: red;
+font-weight: bold;
+}

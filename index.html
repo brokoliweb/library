@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Library</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Local Library</h1>
+      <div class="library-count">
+        <h2>Library count</h2>
+        <h3 id="total-books">Total:</h3>
+        <h3 id="read-books">Read:</h3>
+        <h3 id="not-read-books">Not read:</h3>
+      </div>
+    </header>
+    <div class="order">
+      <label for="book-list"> Order By: </label>
+      <select name="book-list" id="book-list">
+        <option value="alph-author">Alphabetical - Author Name</option>
+        <option value="alph-book">Alphabetical - Book Name</option>
+      </select>
+      <br><br>
+      <div class="library-section">
+        <table id="book-table">
+          <tr>
+            <th>Author</th>
+            <th>Book Title</th>
+            <th>Read</th>
+            <th>CRS</th>
+            <th>Delete</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <button id="open-button">+</button>
+    <div class="form-popup" id="my-form">
+      <form class="form-container" id="book-form">
+        <div>
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" />
+        </div>
+        <div>
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" />
+        </div>
+        <div>
+          <label for="status">Status</label>
+          <select name="status" id="status">
+            <option value="🔵">Read it</option>
+            <option value="⚪">Nope</option>
+          </select>
+        </div>
+        
+
+        <p id="submit-btn">Submit</p>
+        <p id="cancel-btn">Cancel</p>
+      </form>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
