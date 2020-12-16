@@ -23,5 +23,5 @@ console.log(bookCollection)
 bookCollection.sort();
 console.log(bookCollection)
 bookCollection.splice(0,1);
-console.log(bookCollection);
+console.log(bookCollection[0].author);
 bookCollection.indexOf();

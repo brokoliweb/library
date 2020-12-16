@@ -27,9 +27,8 @@ h1 {
 }
 
 .order {
-  background: #4594F5;
+  background: #4594f5;
   padding: 1em;
-  
 }
 
 #book-table {
@@ -39,7 +38,8 @@ h1 {
   text-align: center;
 }
 
-#book-table td, #book-table th {
+#book-table td,
+#book-table th {
   border: 1px solid #ddd;
   padding: 0.8em;
   color: rgb(25, 13, 97);
@@ -51,7 +51,7 @@ h1 {
 }
 
 #book-table tr:nth-child(even) {
-  background-color: #8FBEF7;
+  background-color: #8fbef7;
 }
 
 #book-table tr:hover {
@@ -87,37 +87,36 @@ input {
   height: 2em;
   margin: 1em auto;
   width: 100%;
- font-size: 1em; 
+  font-size: 1em;
 }
 
 #status {
   height: 2em;
-  font-size: 1em; 
+  font-size: 1em;
 }
-
 
 label {
   font-size: 1.2em;
   color: white;
 }
 
-
-
-#submit-btn, #cancel-btn {
+#submit-btn,
+#cancel-btn {
   text-align: center;
-  background: #4594F5;
+  background: #4594f5;
   color: white;
   padding: 1em;
   font-size: 1.4em;
 }
 
-.delete-btn, .crs-btn {
-    width: 10%;
+.delete-btn,
+.crs-btn {
+  width: 10%;
 }
 
-
-.delete-btn:hover, .crs-btn:hover {
+.delete-btn:hover,
+.crs-btn:hover {
   cursor: pointer;
-color: red;
-font-weight: bold;
+  color: rgb(107, 2, 2) !important;
+  font-weight: bold;
 }
