@@ -109,6 +109,11 @@ label {
   font-size: 1.4em;
 }
 
+#submit-btn:hover,
+#cancel-btn:hover {
+  cursor: pointer;
+}
+
 .delete-btn,
 .crs-btn {
   width: 10%;
