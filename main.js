@@ -12,6 +12,10 @@ const titleName = document.getElementById("title");
 const status = document.getElementById("status");
 const bookList = document.getElementById("book-list");
 
+
+
+
+
 openBtn.addEventListener("click", openForm);
 
 cancelBtn.addEventListener("click", closeForm);
@@ -84,6 +88,7 @@ function addToList() {
   listenCRS();
   listenDelete();
   libraryCount();
+  storeLocal();
 }
 
 // sort book list
@@ -177,7 +182,7 @@ function deleteBook(e) {
   }
 
   newCollection = bookCollection.splice(num, 1);
-  console.log(bookCollection);
+  
   makeNewTable();
 }
 
@@ -194,7 +199,7 @@ function makeNewTable() {
 
     let newColumn04 = document.createElement("td");
     newColumn04.setAttribute("class", "crs-btn");
-    newColumn04.textContent = "CRS";
+    newColumn04.textContent = "Change";
 
     let newColumn05 = document.createElement("td");
     newColumn05.textContent = "X";
@@ -208,4 +213,35 @@ function makeNewTable() {
   }
 
   addToList();
+}
+
+
+// store bookCollection in local storage
+
+function storeLocal() {
+  let jsonBookCollection = JSON.stringify(bookCollection);
+  
+  window.localStorage.setItem('bookCollection', jsonBookCollection);
+  
+  
+  
+  
+}
+
+// load from storage
+  loadStorage();
+function loadStorage() {
+  
+  let getItem = localStorage.getItem('bookCollection');
+  
+  let item = JSON.parse(getItem);
+  if(!item) {
+    return;
+  } else {
+    bookCollection = item;
+    makeNewTable();
+  }
+  
+  
+  
 }

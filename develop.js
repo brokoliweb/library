@@ -25,3 +25,6 @@ console.log(bookCollection)
 bookCollection.splice(0,1);
 console.log(bookCollection[0].author);
 bookCollection.indexOf();
+
+let jsonBookCollection = JSON.stringify(bookCollection);
+console.log(jsonBookCollection);
