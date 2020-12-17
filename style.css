@@ -114,6 +114,16 @@ label {
 #submit-btn:hover,
 #cancel-btn:hover {
   cursor: pointer;
+  font-weight: bold;
+}
+
+#submit-btn:hover {
+  color: rgb(25, 13, 97);
+}
+
+
+#cancel-btn:hover {
+  color: #F5843D;
 }
 
 .delete-btn,
@@ -124,7 +134,7 @@ label {
 .delete-btn:hover,
 .crs-btn:hover {
   cursor: pointer;
-  color: rgb(107, 2, 2) !important;
+  color: #F5843D !important;
   font-weight: bold;
 }
 
